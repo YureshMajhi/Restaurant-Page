@@ -1,0 +1,122 @@
+:root {
+  --brown: #e38759;
+  --brown-highlight: #c86331;
+  --brown-border: #883616;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/restaurant\ bg.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+/* Navigation */
+
+nav {
+  height: 7vh;
+  background: linear-gradient(
+    to right,
+    rgba(236, 144, 98, 0.3),
+    rgba(209, 76, 10, 0.3)
+  );
+  border-bottom: 2px solid var(--brown-border);
+}
+
+nav ul {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  line-height: 7vh;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  width: 7rem;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+nav ul li:hover {
+  background-color: var(--brown-highlight);
+}
+
+nav ul li:first-of-type,
+nav ul li:nth-of-type(2),
+nav ul li:last-of-type {
+  flex: 100px;
+}
+
+nav ul li:nth-of-type(2) {
+  border: 2px solid var(--brown-border);
+  border-top: none;
+  border-bottom: none;
+}
+
+/* Home Page */
+
+.container {
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 2rem;
+
+  max-width: 50rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+
+  box-shadow: 0 0 5px var(--brown);
+
+  width: 70%;
+}
+
+.home-header {
+  color: var(--brown-highlight);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 2px solid var(--brown);
+  border-radius: 0.2rem;
+  text-indent: 1rem;
+  text-align: justify;
+  box-shadow: 2px 2px 5px var(--brown);
+}
+
+section .name {
+  margin-left: 1rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+section ul {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+section ul li:last-of-type {
+  color: var(--brown);
+}
+
+section img {
+  height: 17rem;
+  width: 80%;
+  object-fit: cover;
+  margin: 2rem;
+  margin-bottom: unset;
+  border-radius: 0.5rem;
+  border: 1px solid var(--brown-border);
+}
